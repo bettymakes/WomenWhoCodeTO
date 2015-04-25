@@ -11,8 +11,8 @@ html, body {
 
 nav {
   background-color: indigo;
-  height: 50px;
-  padding: 0 30px;
+  height: 60px;
+  padding: 0 60px;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -20,11 +20,13 @@ nav {
   right: 0;
 }
 
+section, header, footer {
+  padding: 60px;
+}
+
 header {
   background-color: indigo;
-  padding: 60px;
   text-align: center;
-  height: 75%;
 }
 
 .logo {
@@ -52,4 +54,27 @@ header {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+.achievements {
+  background-color: dimgrey;
+}
+
+.enemies {
+  background-color: crimson;
+}
+
+.enemies > img {
+  width: 33%;
+  border: 5px solid white;
+
+}
+
+.mission {
+  background-color: mediumblue;
+}
+
+footer {
+  background-color: black;
+  text-align: right;
 }
