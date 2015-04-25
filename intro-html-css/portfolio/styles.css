@@ -7,11 +7,12 @@ html, body {
   padding: 0;
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
 nav {
   background-color: indigo;
-  height: 60px;
+  height: 80px;
   padding: 0 60px;
   overflow: hidden;
   position: fixed;
@@ -20,11 +21,17 @@ nav {
   right: 0;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 section, header, footer {
   padding: 60px;
 }
 
 header {
+  margin-top: 80px;
   background-color: indigo;
   text-align: center;
 }
@@ -32,7 +39,8 @@ header {
 .logo {
   float: left;
   margin: 0;
-  line-height: 60px;
+  line-height: 80px;
+  font-size: 2.5rem;
 }
 
 .nav-links {
@@ -44,16 +52,28 @@ header {
   display: inline-block;
   list-style-type: none;
   padding-left: 30px;
-  line-height: 60px;
+  line-height: 80px;
   text-transform: uppercase;
   float: right;
+}
+
+.nav-links li a {
+  text-decoration: none;
 }
 
 .ursula-headshot {
   border: 10px solid white;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+.section-heading {
+  font-size: 2rem;
+}
+
+header > p, section > p, section li {
+  font-size: 1.25rem;
 }
 
 .achievements {
