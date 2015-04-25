@@ -1,0 +1,55 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  background-color: indigo;
+  height: 50px;
+  padding: 0 30px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+  background-color: indigo;
+  padding: 60px;
+  text-align: center;
+  height: 75%;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  line-height: 60px;
+}
+
+.nav-links {
+  margin: 0;
+    
+}
+
+.nav-links li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+  float: right;
+}
+
+.ursula-headshot {
+  border: 10px solid white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
