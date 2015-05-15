@@ -1,0 +1,118 @@
+/*****************************************************************************
+  class-example
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+$gossip-green: #87D37C;
+$steel-blue: #4b77be;
+$shamrock-green: #2Ecc71;
+$ebony-black: #22313f;
+$lightning-yellow: #F5AB35;
+
+// target ÷ context = result
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+html, body {
+  font-size: 24px;
+  line-height: 1.85rem;
+  height: 100%;
+  width: 100%;
+  font-family: $helvetica;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: lighter;
+  a {
+    color: white;
+    &:hover {
+      color: $steel-blue;
+    }
+  }
+}
+
+.pane {
+  width: 100%;
+  height: 100%;
+}
+
+.pane:nth-child(odd) {
+  background-color: $shamrock-green;
+}
+
+.pane:nth-child(even) {
+  background-color: $ebony-black;
+}
+
+.stage {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 10rem;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+.hover-highlight:hover {
+  color: $lightning-yellow;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+  .stage {
+    padding: 8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+  .stage {
+    padding: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+  .stage {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-weight: normal;
+  }
+}
+
